@@ -3,10 +3,10 @@
 // src/layouts/Layout.astro
 import HamburgerMenu from '../components/HamburgerMenu6.astro';
 import CookieBanner from '../components/CookieBanner.astro';
-
+const baseUrl = import.meta.env.BASE_URL; // Contiene '/astro6/'
 const navLinks = [
   { href: "/", text: "Home"},
-  { href: "/01", text: "Bluetooth MIDI Controller Pro"},
+  { href: `${baseUrl}01`, text: "Bluetooth MIDI Controller Pro"},
   { href: "/02", text: "Grand Piano AUv3 2"},
   { href: "/03", text: "4Waves Synthesizer"},
   { href: "/04", text: "XYZ Synth"},
