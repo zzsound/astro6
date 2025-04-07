@@ -5,6 +5,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     site: 'https://zzsound.github.io',
 
-     base: '/',
+     base: '/astro6/',
 
 });
