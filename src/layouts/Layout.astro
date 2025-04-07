@@ -5,7 +5,7 @@ import CookieBanner from '../components/CookieBanner.astro';
 const baseUrl = import.meta.env.BASE_URL;
 
 const navLinks = [
-  { href: "/", text: "Home"},
+  { href: `${baseUrl}/`, text: "Home"},
   { href: `${baseUrl}01`, text: "Bluetooth MIDI Controller Pro"},
   { href: `${baseUrl}02`, text: "Grand Piano AUv3 2"},
   { href: `${baseUrl}03`, text: "4Waves Synthesizer"},
@@ -70,7 +70,7 @@ const navLinks = [
   <header style="height: 7%; display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
     <h2 style="display: flex; align-items: center; gap: 1rem; flex: 1; justify-content: space-between; padding: 5%">
       <span><HamburgerMenu links={navLinks} fontClass="text-sh" /></span>
-      <span><a href="/" style="padding: 1rem; color:white">PBLSound Apps</a></span>
+      <span><a href=`${baseUrl}/` style="padding: 1rem; color:white">PBLSound Apps</a></span>
     </h2>
   </header>
 
